@@ -1,0 +1,164 @@
+@import "variables";
+@import '~vuetify/src/styles/settings/_variables';
+
+.login-view-form-logo {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+
+/* Ansicht wechselnde kreisförmige Ansicht */
+.login-view-form-circular-view {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: $background-card-radius;
+  border-top-left-radius: $background-card-radius;
+  -webkit-transition: all 0.8s;
+  background-color: $dark-color;
+  overflow: hidden;
+}
+
+.login-view-form-circular-view-active {
+  width: 100vw !important;
+  height: 100vh !important;
+}
+
+.login-button {
+  border-radius: $text-field-radius !important;
+}
+
+.login-view-container {
+  background-color: $dark-color;
+}
+
+.login-view-background-image {
+  width: 100vw;
+  height: 100vh;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.login-view-row {
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1900px) {
+
+
+  .login-view-container {
+    background-color: #363949 !important;
+  }
+
+  .login-view-background-image {
+    border-top-right-radius: $background-card-radius !important;
+    border-bottom-right-radius: $background-card-radius !important;
+    height: 85vh !important;
+  }
+
+  .login-view-form {
+    border-top-left-radius: $background-card-radius !important;
+    border-bottom-left-radius: $background-card-radius !important;
+  }
+
+  .login-view-row {
+    background-color: $dark-color !important;
+    margin: auto !important;
+    min-height: 85% !important;
+    min-width: 85% !important;
+    max-width: 85% !important;
+    max-height: 85% !important;
+    border-radius: $background-card-radius !important;
+    -webkit-box-shadow: 0 0 6px 2px rgba(0,0,0,0.05) !important;
+    -moz-box-shadow: 0 0 6px 2px rgba(0,0,0,0.05) !important;
+    box-shadow: 0 0 6px 2px rgba(0,0,0,0.05) !important;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+}
+
+@media (max-height: 1100px) {
+  /* Kleinere Bildschirme haben keine anderen "Boxed"-Grenzen.
+   Wir können es so groß machen, wie wir wollen. Auch,
+    damit es kreisförmig aussieht, sonst sieht das Verhältnis komisch aus */
+  .login-view-form-circular-view-active {
+    width: 110vw !important;
+    height: 110vh !important;
+  }
+}
+
+@media #{map-get($display-breakpoints, 'lg-and-up')} {
+  .login-view-form {
+    padding-left: 3vw !important;
+  }
+}
+
+
+@media #{map-get($display-breakpoints, 'lg-only')} {
+  .login-view-row {
+    border-radius: 0;
+  }
+
+  .login-view-background-image {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+@media #{map-get($display-breakpoints, 'md-only')} {
+  .login-view-background-image {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .login-view-row {
+    border-radius: 0;
+    height: 100% !important;
+  }
+
+  .login-view-form {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+@media #{map-get($display-breakpoints, 'sm-only')} {
+  .login-view-row {
+    border-radius: 0;
+    height: 100% !important;
+  }
+
+  .login-view-form {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .login-view-form-circular-view-active {
+    width: 100vh !important;
+    height: 100vh !important;
+  }
+}
+
+@media #{map-get($display-breakpoints, 'xs-only')} {
+  .login-view-row {
+    border-radius: 0;
+    height: 100% !important;
+  }
+
+  .login-view-form {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .login-view-form-circular-view-active {
+    width: 100vh !important;
+    height: 100vh !important;
+  }
+}

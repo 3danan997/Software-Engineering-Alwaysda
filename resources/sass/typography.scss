@@ -1,0 +1,134 @@
+@import 'variables'; // Bootstrap
+@import '~vuetify/src/styles/settings/_variables';
+
+/**
+     * @author: Mohammad Hammado 15.07.2022, 08:00
+     * @version 1.0
+     * @since 1.0
+     * @description Font helpers.
+ */
+
+.text-break {
+  word-break: break-word;
+}
+
+.text-font-caption-less {
+  font-size: 0.6rem!important;
+  letter-spacing: 0.0333333333em!important;
+  line-height: 0.6rem;
+}
+
+.text-font-caption {
+  font-size: 0.7rem!important;
+  letter-spacing: 0.0333333333em!important;
+  line-height: 0.7rem;
+}
+
+.text-font-caption-more {
+  font-size: 0.8rem!important;
+  letter-spacing: 0.0178571429em!important;
+  line-height: 1.0rem;
+}
+
+.text-font-body-less {
+  font-size: 0.9rem!important;
+  letter-spacing: 0.03125em!important;
+  line-height: 1.0rem;
+}
+
+.text-font-body {
+  font-size: 1rem!important;
+  letter-spacing: 0.03125em!important;
+  line-height: 1.0rem;
+}
+
+.text-font-body-more {
+  font-size: 1.1rem!important;
+  letter-spacing: 0.03125em!important;
+  line-height: 1rem;
+}
+
+.text-font-subtitle-less {
+  font-size: 1.2rem!important;
+  letter-spacing: 0.0071428571em!important;
+  line-height: 1.2rem;
+}
+
+.text-font-subtitle {
+  font-size: 1.3rem!important;
+  letter-spacing: 0.0071428571em!important;
+  line-height: 1.3rem;
+}
+
+.text-font-subtitle-more {
+  font-size: 1.4rem!important;
+  letter-spacing: 0.009375em!important;
+  line-height: 1.4rem;
+}
+
+.text-font-title-less {
+  font-size: 1.5rem!important;
+  letter-spacing: 0.009375em!important;
+  line-height: 1.5rem;
+}
+
+.text-font-title {
+  font-size: 1.6rem!important;
+  letter-spacing: 0.0125em!important;
+  line-height: 1.6rem;
+}
+
+.text-font-header {
+  font-size: 2rem!important;
+  letter-spacing: 0.0125em!important;
+  line-height: 1.6rem;
+}
+
+.font-weight-semibold {
+  font-weight: 600 !important;
+}
+
+.font-weight-extrabold {
+  font-weight: 800 !important;
+}
+
+
+.text-color-level-0, .text-color-level-0 .v-icon{
+  color: $text-dark !important;
+}
+
+.text-color-level-1, .text-color-level-1 .v-icon{
+  color: rgba($text-dark, 0.8) !important;
+}
+
+.text-color-level-2, .text-color-level-2 .v-icon{
+  color: rgba($text-dark, 0.6) !important;
+}
+
+.text-color-level-3, .text-color-level-3 .v-icon{
+  color: rgba($text-dark, 0.4) !important;
+}
+
+.text-color-level-4, .text-color-level-4 .v-icon{
+  color: rgba($text-dark, 0.2) !important;
+}
+
+.text-single-line {
+  height: 1rem;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media #{map-get($display-breakpoints, 'xl-only')} {
+  /* Überschreibe h1, vergrößern es bei xl Bildschirmen */
+  .h1 {
+    font-size: 3em !important;
+  }
+  /*Überschreibe h2, vergrößern es bei xl-Bildschirmen */
+  .h2 {
+    font-size: 3em !important;
+  }
+}

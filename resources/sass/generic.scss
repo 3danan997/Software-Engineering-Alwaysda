@@ -1,0 +1,270 @@
+@import "variables";
+@import '~vuetify/src/styles/settings/_variables';
+
+.clickable {
+  cursor: pointer;
+}
+
+.border-top {
+  border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.border-left {
+  border-left: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+.text-none {
+  text-decoration: none !important;
+}
+
+
+.divider {
+  margin: 0 !important;
+  border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.min-width-fit-content {
+  min-width: fit-content !important;
+}
+
+.v-select__selections {
+  flex-wrap: nowrap !important;
+}
+
+.text-field .v-input__slot, .text-field-disabled .v-input__slot {
+  background-color: $dark-lighter-color !important;
+  border: none !important;
+  padding: 14px 14px !important;
+  border-radius: $text-field-radius !important;
+}
+
+.text-field .v-input__slot {
+  background-color: $dark-lighter-color !important;
+}
+
+.text-field-bordered {
+  border: 3px solid rgba($text-dark, 0.05) !important;
+}
+
+.text-field-bordered .text-field .v-input__control {
+  background-color: $dark-lighter-color !important;
+}
+
+.text-field-disabled .v-input__slot {
+  background-color: $dark-disabled-color !important;
+}
+
+.text-field-disabled-full .v-input__control {
+  background-color: $dark-disabled-color !important;
+}
+
+.text-field .v-label {
+  color: rgba($text-dark, 0.8) !important;
+  padding-left: 8px !important;
+}
+
+.text-field .v-text-field__slot, .text-field .v-select__selection--comma {
+  padding-left: 8px !important;
+}
+
+// Verstecke pfeile von input[number]
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crasht Chrome beim hovern */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Anscheinend sind noch einige margins vorhanden, obwohl sie versteckt sind */
+}
+
+// Same as above but for Firefox
+input[type=number] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+// Kalendersymbol ausblenden von input[date]
+.text-field input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none !important;
+  background: none !important;
+}
+
+
+.theme--dark.v-list {
+  background: $dark-list-bg !important;
+}
+
+.card {
+  background-color: $dark-lighter-color !important;
+}
+
+.card-radius {
+  border-radius: $card-radius !important;
+}
+
+.card-shadow {
+  -webkit-box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.05) !important;
+  -moz-box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.05) !important;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.card-manage-contact {
+  height: 350px;
+}
+
+.view-stats-row {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.view-stats-col {
+  width: 210px;
+  display: inline-block
+}
+
+
+.view-stats-card {
+  height: 125px;
+}
+
+.view-fade {
+  mask-image: linear-gradient(to bottom, transparent 0%, white 24px, white calc(100% - 24px), transparent 100%) !important;
+}
+
+.view-fade-horizontal {
+  mask-image: linear-gradient(to right, transparent 0%, white 6px, white calc(100% - 6px), transparent 100%) !important;
+}
+
+.fill-height {
+  height: 100%;
+}
+
+/* ViewNavigationBar */
+.view-navigation-bar {
+  z-index: 4 !important;
+  background: $dark-navi-bottom-bg;
+  height: 74px;
+  border-radius: $card-radius !important;
+  position: fixed;
+  -webkit-box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.05) !important;
+  -moz-box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.05) !important;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.05) !important;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.view-navigation-bar-margin {
+  width: 75% !important;
+  bottom: 25px;
+  left: 12.5%;
+}
+
+.view-navigation-bar-full {
+  width: 100% !important;
+  bottom: 0;
+  left: 0;
+}
+
+/* dashboard */
+.dashboard-container {
+  background-color: $dark-color;
+}
+
+.drawer-view {
+  height: 100%;
+}
+
+.view-profile-theme-option {
+  min-width: 50px !important;
+  min-height: 50px !important;
+  max-width: 100px !important;
+  max-height: 100px !important;
+  border: 1px solid $dark-lighter-2-color;
+}
+
+.view-profile-theme-option-active {
+  border: 2px solid var(--v-primary-base) !important;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-left: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $dark-lighter-2-color;
+  border-radius: $scrollbar-radius;
+  width: 12px;
+  transition: background 4.2s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $dark-lighter-color;
+  transition: background 4.2s ease-in-out;
+}
+
+/* Entfernen Sie den Autofill-Effekt aus Chrome */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgba(0, 0, 0, 0) inset !important;
+  -webkit-background-clip: text;
+  transition: all 0s 50000s;
+}
+
+
+@media only screen and (min-width: 1300px) {
+  .drawer-view {
+    //padding-top: 90px !wichtig;
+    padding-left: 0;
+    transition: padding-left 0.2s ease-in-out;
+  }
+
+  .drawer-view-expanded {
+    padding-left: 160px !important;
+    transition: padding-left 0.2s ease-in-out;
+  }
+
+  .card-manage-contact {
+    height: 450px !important;
+  }
+
+  .view-reminders-row {
+    height: 100%;
+    overflow-y: scroll;
+    position: fixed;
+  }
+}
+
+
+@media #{map-get($display-breakpoints, 'md-and-down')} {
+  .card-manage-contact-reminder-row {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border-radius: $text-field-radius;
+  }
+
+  .card-manage-contact-reminder-row {
+    margin-bottom: 14px !important;
+  }
+
+  .view-stats-row {
+    padding-bottom: 6px;
+  }
+
+  .view-stats-row::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+}

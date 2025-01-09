@@ -1,0 +1,35 @@
+{
+  "name": "AlwaysDa",
+  "short_name": "AlwaysDa",
+  "icons": [
+    {
+      "src": "content/brand/logo_192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "content/brand/logo_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "content/brand/logo_192.png",
+      "sizes": "192x192",
+      "type": "maskable"
+    },
+    {
+      "src": "content/brand/logo_512.png",
+      "sizes": "512x512",
+      "type": "maskable"
+    }
+  ],
+  "gcm_sender_id": "144659929800",
+  "start_url": "./",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#272a37",
+  "theme_color": "#3a83e7",
+  "description": "Dein digitales Adressbuch",
+  "dir": "ltr",
+  "lang": "de-DE"
+}
